@@ -1,0 +1,27 @@
+html 
+    head 
+        title Table 
+    body
+        table(border=1)
+            thead 
+                th  Name 
+                th  Mail 
+                th  Gender 
+                th  Qualification
+                th  Address
+                th  Edit
+                th  Delete
+            tbody 
+              each v in values
+                tr 
+                    td= v.name 
+                    td= v.mail 
+                    td= v.gender 
+                    td= v.qual
+                    td= v.address
+                    td
+                        a(href=`edit/${v.name}`)
+                            button Edit  
+                    td
+                        a(href=`delete/${v.name}`)
+                            button Delete

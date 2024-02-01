@@ -1,0 +1,23 @@
+html 
+    head 
+        title Form 
+    body
+        form(action="/form" method="POST")
+            input(type="text" placeholder="Name" name="name") 
+            br
+            input(type="email" placeholder="Email" name="mail") 
+            br
+            input(type="radio" name="gender" value="male") 
+            label   Male 
+            input(type="radio" name="gender" value="female") 
+            label   Female 
+            br
+            select(name="qual") 
+                option(value="10")  10
+                option(value="12")  12
+                option(value="UG")  UG
+                option(value="PG")  PG
+            br
+            textarea(name="address" cols="30"   rows="10") 
+            br
+            input(type="submit" value="Submit")
